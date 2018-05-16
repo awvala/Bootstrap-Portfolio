@@ -123,9 +123,10 @@ h1{
 
 /***** End Navigation styling *****/
 
-#imgArticle {
+.imgArticle {
     float: left;
-    padding: 0px 20px 20px 0px;
+    padding: 0px;
+    margin: 0px 20px 20px 0px;
 }
 
 /***** footer styling *****/
@@ -143,6 +144,7 @@ h1{
     margin-top: 20px;
     padding-top: 30px;
     padding-bottom: 10px;
+    z-index: 9999;
 }
 
 .footercontainer {
@@ -185,3 +187,54 @@ textarea{
     height: 40px;
     font-size: 16px;
 }
+
+/**** End input stylilng *****/
+
+/***** Minicontainer for the portfolio images and banners *****/
+
+.portfoliocontainer{
+    /*display: inline-block;*/
+    position: relative;
+    /*margin: 10px 20px 10px 0px;*/
+    margin: 10px 0px 10px 20px!important;
+
+}
+
+/***** Color text banner at the bottom of the image link *****/
+
+.card {
+    max-width: 350px;
+    margin-bottom: 20px;
+    border: 0px;
+}
+
+.portfolioimagelink{
+    z-index: 100;
+}
+
+.cardbanner{
+    position: absolute;
+    bottom: 10px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    margin-left: -20px;
+    width: 100%;
+    text-decoration-line: none;
+
+    /* IE, Opera, Mozilla supports */
+    text-decoration: none;
+    z-index: 200;
+}
+
+.card a:hover {
+    color: white!important;
+    text-decoration-line: none!important;
+    /* IE, Opera, Mozilla supports */
+    text-decoration: none!important;
+}
+
+/*****  End Portfolio styling *****/
